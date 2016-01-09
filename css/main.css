@@ -1,0 +1,89 @@
+/* --- CSS Document --- */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    color: #4988a7;
+}
+
+.container {
+    height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}
+
+hr {
+    border: 3px solid #bed5df;
+    width: 486px;
+}
+
+/* Typography */
+h2 {
+    font-size: 18px;
+}
+
+/* Links */
+a.email {
+    font-size: 14px;
+    color: #7b7474;
+    text-decoration: none;
+}
+
+/* Home Page */
+.menu {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons img {
+    width: 40px;
+    margin: 0 1px;
+}
+
+/* Media Query */
+@media screen and (max-width: 600px) {
+    hr {
+        width: 300px;
+    }
+}

@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Raleway', 'Arial', sans-serif;
+    font-size: 14px;
     color: #4988a7;
 }
 
@@ -54,9 +55,28 @@ h2 {
 }
 
 /* Links */
+a.link {
+    font-size: 14px;
+    color: #4988a7;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.inpar {
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+}
+
 a.email {
     font-size: 14px;
     color: #7b7474;
+    text-decoration: none;
+}
+
+a.copy {
+    font-weight: bold;
+    color: #4988a7;
     text-decoration: none;
 }
 
@@ -66,6 +86,57 @@ a.email {
     top: 15px;
     right: 30px;
     cursor: pointer;
+}
+
+.modal-pos {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    background-color: rgba(37,41,52,0.7);
+    vertical-align: middle;
+}
+
+.modal-wrapper {
+    position: absolute;
+    max-width: 600px;
+    height: 55%;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px 50px 50px;
+}
+
+.modal-content p {
+    color: #000;
+    line-height: 1.5;
+}
+
+.avatar {
+    margin-top: 20px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+.close-wrapper {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #4988a7;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .logo {
@@ -81,9 +152,26 @@ a.email {
     margin: 0 1px;
 }
 
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
 /* Media Query */
 @media screen and (max-width: 600px) {
     hr {
         width: 300px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .modal-content {
+        padding: 20px;
     }
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>STWebDesigner</title>
+        <title>STWebDesigner | Web Design Tips, Tutorials and News</title>
 
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -11,11 +11,30 @@
         <meta name="keywords" content="STWebDesigner, Website, Web Design, Web Development, Tips, Tutorials, Videos, YouTube"/>
 
         <link rel="stylesheet" href="css/main.css" type="text/css"/>
-        <link href="images/favicon.png" rel="shortcut icon" type="image/png"/>
+        <link rel="stylesheet" href="css/animate.css">
+        <link href="images/logo-sm.png" rel="shortcut icon" type="image/x-icon"/>
     </head>
     
     <body>
          <div class="container">
+            <div class="menu">
+                <a href="javascript:void(0)" onclick="toggle_visibility('modal');"><img src="images/icons/about.png" alt="About the Creator" /></a>
+            </div><!-- /.menu -->
+             
+            <div id="modal" class="modal-pos">
+                <div class="modal-wrapper animated fadeInDown">
+                    <div class="modal-content">
+                        <div class="close-wrapper">
+                            <p><a href="javascript:viod(0)" onclick="toggle_visibility('modal');" class="close">X</a></p>
+                        </div><!-- /.close-wrapper -->
+                        <img src="images/avatar.jpg" alt="Avatar" class="avatar"/>
+                        <h2>Welcome to STWebDesigner</h2>
+                        <p>Hey, my name is Sophie Thomas and I launched STWebDesigner back in 2014. I am also the content creator. STWebDesigner provides Web Design and Development tips, tutorials and news. The purpose of creating STWebDesigner was to share my knowledge about Web Design and Development as I learn.</p>
+                        <p>I teach you how to design and code features that can be used on your next project as well as showing you how to build websites from start to finish through tutorials on <a href="https://www.youtube.com/user/STWebDesigner" target="_blank" class="inpar">YouTube</a>.</p>
+                        <p>Want to find out more about me? <a href="http://sophiethomas.co.uk/" target="_blank" class="link">Check out my website</a>.</p>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-wrapper -->
+            </div><!-- /#modal & .modal-pos --> 
              
             <h1 class="hide">STWebDesigner</h1>
             
@@ -37,6 +56,20 @@
             </div>
 
             <p><a href="mailto:stwebdesigner97@gmail.com" class="email">stwebdesigner97@gmail.com</a></p>
+             
+             <footer>
+                <p>2014 - 2016 &copy; STWebDesigner. Website Designed and Developed by <a href="http://sophiethomas.co.uk/" target="_blank" class="copy">Sophie Thomas</a></p>
+            </footer>
         </div><!-- /.container -->
+        
+        <script type="text/javascript">
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+        </script>
     </body>
 </html>

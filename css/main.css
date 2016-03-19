@@ -55,6 +55,11 @@ h2 {
 }
 
 /* Links */
+a:hover, a:active, a:focus {
+  outline: 0;
+  border: 0;
+}
+
 a.link {
     font-size: 14px;
     color: #4988a7;
@@ -78,6 +83,12 @@ a.copy {
     font-weight: bold;
     color: #4988a7;
     text-decoration: none;
+}
+
+/* Images */
+img {
+    border: 0;
+    outline: 0;
 }
 
 /* Home Page */
